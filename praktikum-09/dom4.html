@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung 2 jumlah bilanngan</title>
+</head>
+<body>
+    <h2>Menghitung dua jumlah bilangan</h2>
+    <form>
+        <input type="number" id="angka1" onchange="hitung_hasil()">
+		<br>
+		<span>+</span>
+		<br>
+        <input type="number" id="angka2" onchange="hitung_hasil()">
+		<br>
+        <span>=</span>
+		<br>
+		<input type="number" id="hasil">
+    </form>
+
+    <script>
+        function hitung_hasil() {
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let hasil= parseInt(angka1) + parseInt(angka2)
+            document.getElementById("hasil").value = hasil ;
+        } 
+
+    </script>
+</body>
+</html>

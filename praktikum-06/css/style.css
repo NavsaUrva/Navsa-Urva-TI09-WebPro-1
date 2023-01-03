@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(223, 223, 223);
+    font-family: 'lucida sans', 'lucida sans regular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+#header {
+    background-color: rgb(208, 206, 231);
+    text-align: center;
+    padding: 10px;
+}
+
+#header h1 {
+    color: blue;
+}
+
+#header blockquote {
+    background-color: rgb(187, 187, 233);
+}
+
+.menu ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.fp::first-letter {
+    font-size: 50px;
+    color: black;
+}
+
+.koleksi {
+    text-align: center;
+}
+
+.koleksi img {
+    width: 20%;
+}
+
+.gambar {
+    text-align: center;
+}
+
+.gambar img {
+    width: 20%;
+}

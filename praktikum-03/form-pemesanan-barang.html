@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <table style="border:solid;" align="center">
+        <tbody>
+            <tr>
+                <td>Home |</td>
+                <td>Generate Link |</td>
+                <td>Transaction History |</td>
+                <td>Policy |</td>
+                <td>logout |</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <img src="image/macbook.jpg" alt="macbook" width="200">
+    <br>
+    <button type="file">Upload Picture</button>
+    <br><br>
+
+<form action="success-order.html">
+    <table>
+        <tbody>
+                <tr>
+                    <td><label for="name">Title Here</label></td>
+                    <td>:<input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="Description">Description</label></td>
+                    <td>:<textarea id="Description"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="Account-Number">Account Number</label></td>
+                    <td>:<input type="number" id="Account-Number"></td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>:<select name="Bank">
+                        <option value="">HSBC</option>
+                        <option value="">BRI</option>
+                        <option value="">BNI</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Account-Holder">Account Holder</label></td>
+                    <td>:<input type="text" id="Account-Holder"></td>
+                </tr>
+                <tr>
+                    <td><label for="Transaction">Transaction</label></td>
+                    <td>:<input type="number" id="Transaction"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td><h6>* if the transaction is for 3 person, choose 3 from the drop-down list</h6></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="send-to-mobile-phone" checked>
+                    <label for="send-to-mobile-phone">Send to Mobile Phone</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Send-to-email" checked>
+                    <label for="Send-to-email">Send to Email</label></td>
+                </tr>
+            <tr>
+                <td><label for="send-to-mobile-phone">Send to Mobile Phone</label></td>
+                <td>:<input type="number" id="send-to-mobile-phone"></td>
+            </tr>
+            <tr>
+                <td><label for="Send-to-email">Send to Email</label></td>
+                <td>:<input type="email" id="Send-to-email"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" style="background-color: green;">Generate link</button>
+</form>
+</body>
+</html>
